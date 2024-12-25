@@ -1,0 +1,141 @@
+body {
+    font-family: 'Libre Baskerville', serif;
+    overflow-y: scroll;
+    color: rgb(85, 85, 85);
+    line-height: 1.5;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    max-width: 700px;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+    padding: 0px 0px 50px;
+}
+
+.menu {
+    display: block;
+    padding: 0;
+    z-index: 1;
+}
+
+.menu-line {
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 1px;
+    width: 90%;
+    border-bottom: 2px solid rgb(85, 85, 85);
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu li {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li::after {
+    display: block;
+    content: attr(data-title);
+    font-weight: bold;
+    height: 0px;
+    padding: 0px 20px;
+    color: transparent;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+a:visited {
+    color: #8932d8;
+}
+
+.menu a {
+    color: rgb(85, 85, 85);
+    display: block;
+    padding: 10px 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+}
+
+.justify-text {
+    text-align: justify;
+}
+
+.menu a:hover {
+    color: rgb(180, 180, 180);
+}
+
+.menu li.active a {
+    font-weight: bold;
+    color: rgb(85, 85, 85);
+}
+
+.content {
+    padding: 30px 30px 50px;
+}
+
+h1 {
+    font-size: 120%;
+    margin-bottom: 5px;
+}
+
+#updates h2 {
+    font-size: 120%; /* Match font size with 'About me' section */
+    margin-top: 5px; /* Add space between heading and content */
+    margin: 0; /* Remove unwanted space around the heading */
+    padding: 0; /* Remove unwanted space within the heading */
+}
+
+.picture {
+    float: right;
+    max-width: 150px;
+    margin-left: 10px;
+}
+
+#emailText {
+    color: transparent;
+    text-shadow: 0 0 6px rgb(85, 85, 85);
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding-top: 10px;
+    }
+
+    .header {
+        padding: 0px 0px 20px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .picture {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
