@@ -1,3 +1,8 @@
 {% if include.url %}
-<a href="{{ include.url }}" {% if include.style %}style="{{ include.style }}"{% endif %} class="{{ include.icon }}"></a> {{ include.description }}
+<span class="video-link">
+    <a href="{{ include.url }}" target="_blank" {% if include.style %}style="{{ include.style }}"{% endif %}>
+        <i class="{{ include.icon }}"></i>
+    </a>
+    <span class="video-description">{{ include.description }}</span>
+</span>
 {% endif %} 
