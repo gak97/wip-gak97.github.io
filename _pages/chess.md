@@ -13,7 +13,7 @@ nav_order: 6
 ## Featured Videos
 Here are some videos featuring me discussing chess:
 
-{% include video.html style="color: red" url="https://youtu.be/m5KGCZP93Ag" icon="fa-brands fa-youtube" description="Interview following my win at the Karnataka State Championship in 2018" %}
+{%- include video.html url="https://youtu.be/m5KGCZP93Ag" icon="fa-brands fa-youtube" style="color: red" description="Interview following my win at the Karnataka State Championship in 2018" -%}
 
 {% include video.html style="color: red" url="https://youtu.be/kgDDwd2AfAg" icon="fa-brands fa-youtube" description="Explaining one of my games from the Karnataka State Championship in 2018" %}
 
