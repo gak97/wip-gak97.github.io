@@ -44,6 +44,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/gak97/cv/";
           },
+        },{id: "nav-chess",
+          title: "Chess",
+          description: "My chess career and achievements",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/gak97/chess/";
+          },
         },{id: "nav-teaching",
           title: "teaching",
           description: "Materials for courses you taught. Replace this text with your description.",
