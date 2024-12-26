@@ -1,7 +1,7 @@
-@import 'variables';
-@import 'themes';
-@import 'layout';
-@import 'videos';
+@use 'variables' as *;
+@use 'themes' as *;
+@use 'layout' as *;
+@use 'videos' as *;
 
 /*******************************************************************************
  * Styles for the base elements of the theme.

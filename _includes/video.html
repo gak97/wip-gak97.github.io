@@ -1,8 +1,14 @@
-{% capture video_link %}
-<div class="video-link">
-    <a href="{{ include.url }}" target="_blank" rel="noopener noreferrer" {% if include.style %}style="{{ include.style }}"{% endif %}>
-        <i class="{{ include.icon }}" aria-hidden="true"></i>
-    </a>
-    <span class="video-description">{{ include.description }}</span>
-</div>
-{% endcapture %}{{ video_link | strip }} 
+{% comment %}
+  Video include template
+  Parameters:
+  - url: YouTube video URL
+  - icon: Font Awesome icon class
+  - style: Optional CSS styles
+  - description: Video description
+{% endcomment %}
+<div class="video-wrapper">
+  <a href="{{ include.url }}" target="_blank" rel="noopener noreferrer" {% if include.style %}style="{{ include.style }}"{% endif %}>
+    <i class="{{ include.icon }}" aria-hidden="true"></i>
+  </a>
+  <span class="video-description">{{ include.description }}</span>
+</div> 

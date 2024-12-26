@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 /******************************************************************************
  * Content
  ******************************************************************************/
@@ -51,3 +53,19 @@ body.sticky-bottom-footer {
 *****************************************************************************/
 
 // TODO: redefine projects layout.
+
+// Video wrapper styles
+.video-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  
+  a {
+    margin-right: 0.5rem;
+    text-decoration: none;
+  }
+  
+  .video-description {
+    font-size: 0.9rem;
+  }
+}

@@ -18,12 +18,16 @@ group :jekyll_plugins do
     gem 'jekyll-toc'
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
-    gem 'terser'
     gem 'unicode_utils'
     gem 'webrick'
+    gem 'google-protobuf', '4.29.2'
+    gem 'observer'
 end
 group :other_plugins do
     gem 'css_parser'
     gem 'feedjira'
     gem 'httparty'
 end
+
+# Windows-specific gems
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
