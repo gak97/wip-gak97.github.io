@@ -1,12 +1,31 @@
-**/*.map
-**/*.min.css
-**/*.min.js
-assets/css/main.scss
-assets/js/distillpub/template.v2.js
-assets/js/search/*.js
-assets/plotly/demo.html
-lighthouse_results/**
-_posts/2015-10-20-math.md
-_sass/font-awesome/*.scss
-_sass/tabler-icons/*.scss
-_scripts/search.liquid.js
+# Dependencies
+node_modules
+vendor
+
+# Ruby files
+Gemfile
+Gemfile.lock
+
+# Build output
+_site
+.jekyll-cache
+.sass-cache
+
+# Binary files
+*.jpg
+*.jpeg
+*.gif
+*.png
+*.ico
+*.pdf
+*.zip
+*.tar
+*.gz
+
+# Other
+.DS_Store
+.git
+LICENSE
+*.html
+assets/css/main.css
+googleb3b65b7564a8cdfe.html

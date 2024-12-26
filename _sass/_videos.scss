@@ -20,9 +20,10 @@
 
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
+    max-width: 100%;
     margin: 1rem 0;
     
     iframe {
@@ -34,8 +35,8 @@
     }
     
     .video-description {
-        margin-top: 1rem;
-        font-size: 0.9rem;
-        display: block;
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+        color: var(--global-text-color-light);
     }
 } 

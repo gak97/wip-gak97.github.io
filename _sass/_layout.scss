@@ -1,71 +1,25 @@
-@use 'variables' as *;
-
-/******************************************************************************
- * Content
- ******************************************************************************/
-
-body {
-  padding-bottom: 70px;
-  color: var(--global-text-color);
-  background-color: var(--global-bg-color);
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    scroll-margin-top: 66px;
-  }
-}
-
-body.fixed-top-nav {
-  // Add some padding for the nav-bar.
-  padding-top: 56px;
-}
-
-body.sticky-bottom-footer {
-  // Remove padding below footer.
-  padding-bottom: 0;
-}
+@use "variables" as *;
 
 .container {
   max-width: $max-content-width;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-// Profile
-.profile {
-  img {
-    width: 100%;
-  }
+.content {
+  padding: 2rem 0;
 }
 
-// TODO: redefine content layout.
+.header {
+  background-color: var(--global-bg-color);
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--global-divider-color);
+}
 
-/******************************************************************************
- * Publications
- ******************************************************************************/
-
-// TODO: redefine publications layout.
-
-/*****************************************************************************
-* Projects
-*****************************************************************************/
-
-// TODO: redefine projects layout.
-
-// Video wrapper styles
-.video-wrapper {
-  display: flex;
-  align-items: center;
-  margin: 0.5rem 0;
-  
-  a {
-    margin-right: 0.5rem;
-    text-decoration: none;
-  }
-  
-  .video-description {
-    font-size: 0.9rem;
-  }
+.footer {
+  background-color: var(--global-footer-bg-color);
+  color: var(--global-footer-text-color);
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.875rem;
 }
