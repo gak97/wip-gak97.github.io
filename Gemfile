@@ -29,5 +29,7 @@ group :other_plugins do
     gem 'httparty'
 end
 
-# Windows-specific gems
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+# Windows and Unix-specific gems
+platforms :mswin, :mingw, :x64_mingw do
+    gem 'wdm', '>= 0.1.0'
+end
