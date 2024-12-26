@@ -1,0 +1,19 @@
+- title: About
+  url: /
+  nav: true
+  nav_order: 1
+
+- title: Publications
+  url: /publications/
+  nav: true
+  nav_order: 2
+
+- title: CV
+  url: /cv/
+  nav: true
+  nav_order: 3
+
+- title: Chess
+  url: /chess/
+  nav: true
+  nav_order: 4 

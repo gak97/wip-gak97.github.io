@@ -4,7 +4,7 @@ permalink: /chess/
 title: Chess
 description: My chess career and achievements
 nav: true
-nav_order: 6
+nav_order: 4
 ---
 
 ## FIDE Profile
@@ -13,15 +13,11 @@ nav_order: 6
 ## Featured Videos
 Here are some videos featuring me discussing chess:
 
-{%- include video.html url="https://youtu.be/m5KGCZP93Ag" icon="fa-brands fa-youtube" style="color: red" description="Interview following my win at the Karnataka State Championship in 2018" -%}
-
-{% include video.html style="color: red" url="https://youtu.be/kgDDwd2AfAg" icon="fa-brands fa-youtube" description="Explaining one of my games from the Karnataka State Championship in 2018" %}
-
-{% include video.html style="color: red" url="https://youtu.be/fLPbtNu7aZo" icon="fa-brands fa-youtube" description="2021 recap from chess.com India of one of my best games from the Karnataka State Championship in 2018" %}
-
-{% include video.html style="color: red" url="https://youtu.be/iFG84uLK8rU" icon="fa-brands fa-youtube" description="Brief explanation of my career during the Bhopal GM Chess Tournament in 2017" %}
-
-{% include video.html style="color: red" url="https://youtu.be/w34ICFDYs48" icon="fa-brands fa-youtube" description="Explaining a game from the World Junior Chess Championship in 2011, where I got my first IM and GM norms" %}
+- [Interview after Karnataka State Championship 2018](https://youtu.be/m5KGCZP93Ag)
+- [Game Analysis from Karnataka State Championship](https://youtu.be/kgDDwd2AfAg)
+- [Best Games Recap 2021](https://youtu.be/fLPbtNu7aZo)
+- [Career Interview at Bhopal GM Tournament](https://youtu.be/iFG84uLK8rU)
+- [World Junior Championship Game Analysis](https://youtu.be/w34ICFDYs48)
 
 A detailed list of my achievements can be found [here]({{ '/assets/files/achievements.pdf' | relative_url }}).
 
