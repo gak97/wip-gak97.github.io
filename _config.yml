@@ -79,31 +79,6 @@ google_site_verification: ""
 bing_site_verification: ""
 
 # -----------------------------------------------------------------------------
-# Blog
-# -----------------------------------------------------------------------------
-
-blog_name: ""
-blog_nav_title: ""
-blog_description: ""
-permalink: /blog/:year/:title/
-
-pagination:
-  enabled: false
-
-giscus:
-  repo: ""
-  repo_id: ""
-  category: Comments
-  category_id: ""
-  mapping: title
-  strict: 1
-  reactions_enabled: 1
-  input_position: bottom
-  theme: preferred_color_scheme
-  emit_metadata: 0
-  lang: en
-
-# -----------------------------------------------------------------------------
 # Collections
 # -----------------------------------------------------------------------------
 
@@ -113,9 +88,6 @@ collections:
       layout: post
     output: false
     permalink: /news/:path/
-  projects:
-    output: false
-    permalink: /projects/:path/
 
 announcements:
   enabled: false
@@ -190,18 +162,11 @@ jekyll-minifier:
 # -----------------------------------------------------------------------------
 
 jekyll-archives:
-  enabled: [year, tags, categories]
+  enabled: [year]
   layouts:
     year: archive-year
-    tag: archive-tag
-    category: archive-category
   permalinks:
     year: '/blog/:year/'
-    tag: '/blog/tag/:name/'
-    category: '/blog/category/:name/'
-
-display_tags: ['formatting', 'images', 'links', 'math', 'code']
-display_categories: ['blockquotes']
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
