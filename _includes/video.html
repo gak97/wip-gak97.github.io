@@ -6,14 +6,15 @@
   - style: Optional CSS styles
   - description: Video description
 {% endcomment %}
-{% assign video_url = include.url | default: "" %}
-{% if video_url != "" %}
 <div class="video-wrapper">
-  <a href="{{ video_url | escape }}" target="_blank" rel="noopener noreferrer" {% if include.style %}style="{{ include.style }}"{% endif %}>
-    <i class="{{ include.icon | default: 'fas fa-video' }}" aria-hidden="true"></i>
-  </a>
+  <iframe
+    src="{{ include.url }}"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    {% if include.style %}style="{{ include.style }}"{% endif %}
+  ></iframe>
   {% if include.description %}
   <span class="video-description">{{ include.description }}</span>
   {% endif %}
-</div>
-{% endif %} 
+</div> 
